@@ -1,0 +1,83 @@
+.overlay-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    width: 300%; 
+    animation: slide 6s infinite;
+}
+
+.img-container {
+    flex: 0 0 auto;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+.proyecto-section{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.estado-section{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.semblanza-section {
+    padding: 60px 0;
+}
+
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team-card {
+    border-radius: 10px;
+    padding: 25px;
+    width: 280px;
+    text-align: center;
+}
